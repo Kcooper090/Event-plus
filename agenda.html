@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event+ - Agenda</title>
+</head>
+<body>
+
+    <header>
+        <div class="desktop">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="busca.html">Busca Rápida</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="btn-inscrito">
+            <a href="inscreva-se.html">
+                <button>Inscreva-se</button>
+            </a>
+        </section>
+    </header>
+
+    <main class="busca-banner">
+        <h1 class="busca-h1">Sua Agenda de Eventos</h1>
+        <p class="busca-p">Confira os eventos e lugares que você salvou para visitar</p>
+    </main>
+
+    <section class="container" style="max-width: 900px; margin: 30px auto; padding: 0 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2>Itens Salvos</h2>
+          
+            <button id="btn-limpar-historico" style="background-color: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">
+                Limpar Histórico
+            </button>
+        </div>
+
+        <div id="historico-container"></div>
+    </section>
+
+    <script src="agenda.js" defer></script>
+</body>
+
+</html>

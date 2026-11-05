@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+
+    background-color: #ffffff;
+
+    color: #000;
+}
+
+/* ===== Header ===== */
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 60px;
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+
+}
+
+header .desktop nav ul{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+header .desktop nav ul li a{
+
+    color: #000;
+    text-decoration: none;
+
+}
+
+header .desktop nav ul li {
+
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.desktop nav a{
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.desktop nav a:hover{
+
+    transform: scale(1.05);
+
+}
+
+header .desktop nav ul{
+
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+header button{
+
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #000;
+    font-size: medium;
+    color: #000;
+    transition: 0.5s;
+}
+
+header button:hover {
+
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* ===== Op do site ===== */
+
+.intro{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#E4854E;
+    transition: 1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-header{
+    position: absolute;
+    top: 40% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.logo.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.logo.fade{
+    transform: translateY(-150px);
+    opacity: 0;
+}
+
+
+/* ===== Banner ===== */
+
+main.banner{
+
+   height: 100vh;
+   width: 100%;
+
+   background-image: url(Papel_de_Parede_Wallpaper_Mural_de_Cortiça_Cork_Divertido_Bege.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+
+   padding-left: 70px;
+   padding-right: 20px;
+
+   color: #fff;
+}
+
+main.banner .txt h1{
+
+    font-size: 75px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+main.banner .txt2{
+
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+main.banner .txt2 p{
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+main.banner .txt2 span{
+
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.banner button{
+
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: medium;
+    color: white;
+    transition: 0.5s;
+}
+
+.banner button:hover {
+
+    background-color: #fff;
+    color: #000;
+}
+
+/* ===== Objective PÁGINA INDEX (CORPO 1)===== */
+
+.objective {
+    padding: 80px 70px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.product-img {
+    flex: 0 0 42%;
+    height: 320px;
+
+    background-color: #e6e6e6;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+.product-text {
+    flex: 1;
+}
+
+.product-text h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.product-text p {
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .product {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .product-img {
+        width: 100%;
+        flex-basis: auto;
+    }
+}
+
+/* ===== SOBRE O EVENT+ (CORPO 2) ===== */
+
+section.contato {
+    background-color: #ffffff;
+    padding: 80px 70px;
+}
+
+section.contato .interface {
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.txt-contato {
+    flex: 1 1 40%;
+}
+
+.icons-contato {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.txt-contato h3 {
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.icons-contato a {
+    text-decoration: none;
+    width: 100%;
+    max-width: 380px;
+}
+
+.icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 20px auto;
+    padding: 0 30px;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@media (max-width: 800px) {
+    section.contato .interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons-contato {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .icons-contato a {
+        max-width: 100%;
+    }
+}
+
+
+.icons-contato button i {
+    font-size: 20px;
+}
+
+
+.icons-contato button:hover {
+    background-color: #000;
+}
+
+.icons-contato button:hover i,
+.icons-contato button:hover p {
+    color: #fff;
+}
+
+
+.product2-list li {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.2s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.product2-list li:hover {
+    transform: scale(1.05); 
+    background-color: #000;  
+    color: #fff;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+/* ===== Footer  O BÁSICO (ALTERAÇÕES OPCIONAIS FUTURAS) ===== */
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+}
+
+footer p {
+    color: #000000;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* ===== Busca Rápida - Grade e barra de pesquisa (me matei)===== */
+
+.busca-banner {
+
+    text-align: center;
+}
+
+.busca-h1{
+
+    margin-top: 7% ;
+    margin-bottom: 2%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  width: 400px;
+  margin: 20px auto;
+  margin-top: 4%;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+#search-input {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+
+.search label {
+  height: 20px;
+}
+
+.Text-busca-type1 h1 {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.card {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.card__image {
+  width: 100%;
+  display: block;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+}
+
+
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  font-size: 0.8em;
+  color: #555;
+  border-bottom: 2px solid #ccc;
+}
+
+
+.card__info .material-icons {
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+
+.card__link, 
+.btn-adicionar-agenda {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background-color: #1a73e8;
+  color: #ffffff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(26, 115, 232, 0.2);
+}
+
+.card__link:hover, 
+.btn-adicionar-agenda:hover {
+  background-color: #1557b0;
+  box-shadow: 0 4px 8px rgba(26, 115, 232, 0.3);
+  transform: scale(1.02);
+}
+
+
+.btn-adicionar-agenda.salvo {
+  background-color: #2e7d32 !important; 
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
+}
+
+
+ 
